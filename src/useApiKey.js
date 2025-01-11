@@ -7,6 +7,7 @@ const useApiKey = () => {
   const [apiKeySet, setApiKeySet] = useState(false);
 
   const getApiKey = () => {
+    console.log(process.env.SPOTIFY_CLIENT_ID);
     fetch('https://accounts.spotify.com/api/token', {
       method: 'POST',
       headers: {
