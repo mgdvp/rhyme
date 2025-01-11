@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+body{
+  background-color: #080808;
+  color: #fafafa;
+  font-family: 'Lato', Segoe UI, Arial, sans-serif;
+}
+
+audio{
+  width: 220px;
+  max-width: 100%;
+}
+
+p{
+  line-height: 1.4;
+}
+
+h1,h2{
+  margin-bottom: 1rem;
+}
+
+img{
+  user-select: none;
+}
+
+input{
+  font-size: 17px;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 16px;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  background-color: #DDD;
+  margin-bottom: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.Sidebar a:not(.logo){
+  font-size: 18px;
+  color: #bbb;
+  padding: 8px 0;
+}
+
+a:not(.logo):hover{
+  color: #eee;
+}
+
+a:not(.logo).active{
+  color: #eee;
+}
+
+#root{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.Sidebar{
+  height: calc(100vh - 20px);
+  padding: 2rem;
+  width: 24%;
+  background-color: #181819;
+  border-radius: 8px;
+}
+
+.App{
+  padding: 2rem;
+  flex: 1;
+  text-align: left;
+  border-radius: 8px;
+  background-color: #181819;
+  margin-left: 10px;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+  width: 50%;
+}
+
+
+
+.logo{
+  font-family: 'Braah One', cursive;
+  font-size: 32px;
+  color: #88C18E;
+}
+
+.flee{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.flee img{
+  width: 100%;
+  border-radius: 8px;
+}
+
+.flee > div{
+  padding: 1rem;
+  background-color: #212122;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.Home .flee div{
+  width: 216px;
+  margin: 16px 16px 0 0;
+}
+
+.Home .flee div:hover{
+  background-color: #242425;
+}
+
+.sfflex, .sfflex-r{
+  display: flex;
+  width: 100%;
+}
+
+.sfflex img{
+  width: 76px;
+}
+
+.sfflex-r{
+  margin-left: 1rem;
+  justify-content: space-between;
+}
+
+.artist{
+  color: #FFB84C;
+}
+
+.playpause{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.playpause:hover{
+  opacity: 0.85;
+}
+
+.playpause img{
+  width: 48px;
+}
+
+@media only screen and (max-width: 742px){
+  .Sidebar,.App{
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .flee{
+    justify-content: center;
+  }
+  .Home .flee div{
+    width: 172px;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .Home .flee img{
+    width: 100%;
+  }
+  .Home .flee div{
+    width: calc(70% + 32px);
+  }
+}
