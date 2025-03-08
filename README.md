@@ -1,4 +1,4 @@
-![image](https://github.com/agreeeed/rhyme/assets/113066556/9fba7ba0-3690-48cb-8d3b-f5268574af78)
+
 
 
 # Rhyme is A Music App Made With Spotify Web Api And React
