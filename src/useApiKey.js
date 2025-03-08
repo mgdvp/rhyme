@@ -7,7 +7,6 @@ const useApiKey = () => {
   const [apiKeySet, setApiKeySet] = useState(false);
 
   const getApiKey = () => {
-    console.log(process.env.SPOTIFY_CLIENT_ID, process.env.SPOTIFY_CLIENT_SECRET);
     fetch('https://accounts.spotify.com/api/token', {
       method: 'POST',
       headers: {
@@ -15,8 +14,8 @@ const useApiKey = () => {
       },
       body: new URLSearchParams({
         grant_type: 'client_credentials',
-        client_id:  process.env.SPOTIFY_CLIENT_ID,
-        client_secret: process.env.SPOTIFY_CLIENT_SECRET
+        client_id:  process.env.REACT_APP_SPOTIFY_CLIENT_ID,
+        client_secret: process.env.REACT_APP_SPOTIFY_CLIENT_SECRET
       }),
     })
       .then((res) => res.json())
