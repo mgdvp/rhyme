@@ -4,6 +4,7 @@
 # Rhyme is A Music App Made With Spotify Web Api And React
 here are [demo](https://rhymemusic.vercel.app)
 
+### change spotify api credentials in .env
 
 ## Getting Started with Create React App
 
