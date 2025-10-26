@@ -9,8 +9,10 @@ function About() {
       <p>Spotify API kurallarına uygun olarak, siteden direkt olarak şarkının sadece 30 saniyelik önizlemesini çalabilirsiniz.</p>
       <p>Github üzerinden projeyi yıldızlamayı unutmayın!</p>
       <p style={{color: 'gray', marginTop: 10}}>Build V0.1</p>
+      <p style={{color: 'gray', marginTop: 10}}>2023</p>
     </div>
   );
 }
 
 export default About;
+
