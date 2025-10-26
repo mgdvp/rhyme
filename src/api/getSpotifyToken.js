@@ -5,16 +5,15 @@ export default async function handler(req, res) {
   const clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
 
   const body = new URLSearchParams({
-    grant_type: 'client_credentials'
+    grant_type: 'client_credentials',
+    client_id: clientId,
+    client_secret: clientSecret
   });
-
-  const authString = Buffer.from(`${clientId}:${clientSecret}`).toString('base64');
 
   try {
     const response = await fetch("https://accounts.spotify.com/api/token", {
       method: "POST",
       headers: {
-        "Authorization": `Basic ${authString}`,
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: body.toString(),
