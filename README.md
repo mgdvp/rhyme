@@ -6,10 +6,9 @@
 
 ## Check [Demo](https://rhymemusic.vercel.app)
 
+## Getting Started with Create React App
 
 ### change spotify api credentials in .env
-
-## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
