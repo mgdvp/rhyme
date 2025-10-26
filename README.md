@@ -1,8 +1,10 @@
 
 
 
-# Rhyme is A Music App Made With Spotify Web Api And React
-here are [demo](https://rhymemusic.vercel.app)
+# Rhyme is A Music Player App Made With Spotify Web Api And React
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/28cdc444-2675-4da9-9900-fb2419f3c36c" />
+Check [Demo](https://rhymemusic.vercel.app)
+
 
 ### change spotify api credentials in .env
 
