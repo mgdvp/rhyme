@@ -1,5 +1,5 @@
   {
     "rewrites": [
-      { "source": "/api/getSpotifyToken", "destination": "/api/getSpotifyToken.js" },
+      { "source": "/api/getSpotifyToken", "destination": "/api/getSpotifyToken.js" }
     ]
   }
